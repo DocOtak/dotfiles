@@ -1,0 +1,6 @@
+.DS_Store
+.netrwhist
+vim/backup/*
+vim/bundle/*
+!vim/bundle/Vundle.vim
+!vim/backup/.gitkeep
