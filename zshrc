@@ -44,3 +44,7 @@ source virtualenvwrapper.sh
 PATH=$PATH:$HOME/.dotfiles/bin # custom scripts for making things easier
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+alias tmux='tmux -u'
+export LANG=en_US.UTF-8
+export LC_ALL=en_US.UTF-8 
