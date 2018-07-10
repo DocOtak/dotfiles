@@ -5,6 +5,8 @@ filetype off
 set rtp+=~/.vim/bundle/Vundle.vim
 call vundle#begin()
 
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
 Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'plasticboy/vim-markdown'
@@ -15,6 +17,11 @@ Plugin 'mxw/vim-jsx'
 call vundle#end()
 filetype plugin indent on
 
+" airline config
+let g:airline_powerline_fonts=1
+let g:airline_theme='simple'
+
+
 let NERDTreeIgnore=['\.pyc$', '\~$']
 
 set number
@@ -22,8 +29,6 @@ set ruler
 syntax on
 set visualbell
 set fileencodings=utf8
-
-set rtp+=~/.dotfiles/powerline/powerline/bindings/vim
 
 let g:Powerline_symbols = 'fancy'
 let g:solarized_termcolors = 256
