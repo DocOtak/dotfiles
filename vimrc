@@ -9,6 +9,8 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'altercation/vim-colors-solarized'
 Plugin 'plasticboy/vim-markdown'
 Plugin 'Glench/Vim-Jinja2-Syntax'
+Plugin 'pangloss/vim-javascript'
+Plugin 'mxw/vim-jsx'
 
 call vundle#end()
 filetype plugin indent on
@@ -24,7 +26,7 @@ set fileencodings=utf8
 set rtp+=~/.dotfiles/powerline/powerline/bindings/vim
 
 let g:Powerline_symbols = 'fancy'
-let g:solarized_termcolors = 16
+let g:solarized_termcolors = 256
 let g:solarized_termtrans = 1
 set background=dark
 colorscheme solarized

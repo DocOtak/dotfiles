@@ -28,6 +28,8 @@ ZSH_THEME="robbyrussell"
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 # COMPLETION_WAITING_DOTS="true"
 
+export DOCKER_HOST=localhost:2375
+
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
@@ -39,11 +41,14 @@ source $ZSH/oh-my-zsh.sh
 alias tmux='tmux -2'
 export PATH=$PATH:/usr/texbin
 
-source virtualenvwrapper.sh
-
 PATH=$PATH:$HOME/.dotfiles/bin # custom scripts for making things easier
 
 export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+
+#pyenv
+export PATH="$HOME/.pyenv/bin:$PATH"
+eval "$(pyenv init -)"
+eval "$(pyenv virtualenv-init -)"
 
 alias tmux='tmux -u'
 export LANG=en_US.UTF-8
