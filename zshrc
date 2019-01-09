@@ -1,7 +1,5 @@
 # Path to your oh-my-zsh configuration.
 ZSH=$HOME/.oh-my-zsh
-autoload -U compinit
-compinit -u
 
 # Set name of the theme to load.
 # Look in ~/.oh-my-zsh/themes/
@@ -47,7 +45,7 @@ export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
 
 #pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
-eval "$(pyenv init -)"
+eval "$(pyenv init - --no-rehash)"
 eval "$(pyenv virtualenv-init -)"
 
 alias tmux='tmux -u'
