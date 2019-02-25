@@ -13,6 +13,7 @@ Plugin 'plasticboy/vim-markdown'
 Plugin 'Glench/Vim-Jinja2-Syntax'
 Plugin 'pangloss/vim-javascript'
 Plugin 'mxw/vim-jsx'
+Plugin 'nvie/vim-flake8'
 
 call vundle#end()
 filetype plugin indent on

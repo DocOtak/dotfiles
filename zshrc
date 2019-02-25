@@ -25,8 +25,15 @@ ZSH_THEME="robbyrussell"
 
 # Uncomment following line if you want red dots to be displayed while waiting for completion
 # COMPLETION_WAITING_DOTS="true"
+#
 
+# Talk to docker desktop for windows (might work for mac too)
 export DOCKER_HOST=localhost:2375
+
+# Note: Bash on Windows does not currently apply umask properly.
+if [ "$(umask)" = "000" ]; then
+   umask 022
+fi
 
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
