@@ -48,7 +48,9 @@ export PATH=$PATH:/usr/texbin
 
 PATH=$PATH:$HOME/.dotfiles/bin # custom scripts for making things easier
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+# NVM stuff
+export NVM_DIR="$HOME/.dotfiles/nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 #pyenv
 export PATH="$HOME/.pyenv/bin:$PATH"
