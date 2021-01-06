@@ -19,8 +19,9 @@ call vundle#end()
 filetype plugin indent on
 
 " airline config
-let g:airline_powerline_fonts=1
+"let g:airline_powerline_fonts=1
 let g:airline_theme='simple'
+let g:airline_symbols_ascii = 1
 
 
 let NERDTreeIgnore=['\.pyc$', '\~$']
@@ -31,7 +32,6 @@ syntax on
 set visualbell
 set fileencodings=utf8
 
-let g:Powerline_symbols = 'fancy'
 let g:solarized_termcolors = 256
 let g:solarized_termtrans = 1
 set background=dark
