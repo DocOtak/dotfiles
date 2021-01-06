@@ -27,9 +27,6 @@ ZSH_THEME="robbyrussell"
 # COMPLETION_WAITING_DOTS="true"
 #
 
-# Talk to docker desktop for windows (might work for mac too)
-export DOCKER_HOST=localhost:2375
-
 # Note: Bash on Windows does not currently apply umask properly.
 if [ "$(umask)" = "000" ]; then
    umask 022
