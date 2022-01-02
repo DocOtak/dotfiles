@@ -40,7 +40,6 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-PATH=$PATH:$HOME/.dotfiles/bin # custom scripts for making things easier
 
 # NVM stuff
 export NVM_DIR="$HOME/.dotfiles/nvm"
