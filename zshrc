@@ -40,9 +40,6 @@ plugins=(git)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-alias tmux='tmux -2'
-export PATH=$PATH:/usr/texbin
-
 PATH=$PATH:$HOME/.dotfiles/bin # custom scripts for making things easier
 
 # NVM stuff
@@ -50,11 +47,12 @@ export NVM_DIR="$HOME/.dotfiles/nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
 #pyenv
-export PATH="$HOME/.pyenv/bin:$PATH"
+export PYENV_ROOT="$HOME/.dotfiles/pyenv"
+export PATH="$PYENV_ROOT/bin:$PATH"
 eval "$(pyenv init - --no-rehash)"
 eval "$(pyenv virtualenv-init -)"
+eval "$(pyenv init --path)"
 
-alias tmux='tmux -u'
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8 
 
