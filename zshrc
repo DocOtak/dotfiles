@@ -41,17 +41,6 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 
-# NVM stuff
-export NVM_DIR="$HOME/.dotfiles/nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
-
-#pyenv
-export PYENV_ROOT="$HOME/.dotfiles/pyenv"
-export PATH="$PYENV_ROOT/bin:$PATH"
-eval "$(pyenv init - --no-rehash)"
-eval "$(pyenv virtualenv-init -)"
-eval "$(pyenv init --path)"
-
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8 
 
@@ -69,3 +58,17 @@ compctl -K _pip_completion pip
 
 # Display the hostname on the right prompt
 RPROMPT='%M'
+
+# Disable homebrew API (often I have limited internet and having everything local is important)
+export HOMEBREW_NO_INSTALL_FROM_API=1
+
+# bun completions
+[ -s "/Users/abarna/.bun/_bun" ] && source "/Users/abarna/.bun/_bun"
+
+# bun
+export BUN_INSTALL="$HOME/.bun"
+export PATH="$BUN_INSTALL/bin:$PATH"
+
+# local binary
+export PATH="$HOME/.local/bin:$PATH"
+
