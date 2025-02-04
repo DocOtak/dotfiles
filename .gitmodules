@@ -7,6 +7,3 @@
 [submodule "powerline-fonts"]
 	path = powerline-fonts
 	url = https://github.com/Lokaltog/powerline-fonts.git
-[submodule "pyenv"]
-	path = pyenv
-	url = https://github.com/pyenv/pyenv.git
